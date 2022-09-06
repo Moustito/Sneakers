@@ -1,0 +1,124 @@
+.main {
+    &__slide {
+        position: relative;
+        &__images {
+            width: 100%;
+        }
+        .img {
+            display: none;
+        }
+        &__button {
+            color: black;
+            border: 0;
+            background-color: $white;
+            border-radius: 100%;
+            padding: 10px 15px 10px 15px;
+
+
+        }
+        .leftBtn {
+            position: absolute;
+            top: 45%;
+            left: 2%;
+        }
+        .rightBtn {
+            position: absolute;
+            top: 45%;
+            right: 2%;
+        }
+    }
+
+    &__info {
+        font-family: $primaryFont;
+        font-size: 16px;
+
+        padding: 20px;
+
+        &__subtitle {
+            font-weight: 400;
+            color: $orange;
+            text-transform: uppercase;
+            
+            padding-bottom: 15px;
+        }
+        &__title {
+            font-weight: 700;
+            color: $varkBlue;
+            font-size: 28px;
+
+            padding-bottom: 20px;
+        }
+        &__text {
+            font-weight: 400;
+            color: $grayishBlue;
+            line-height: 27px;
+
+            padding-bottom: 20px;
+        }
+        &__price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 35px;
+            &__current {
+                font-size: 28px;
+                font-weight: 700;
+                color: $varkBlue;
+                width: 5%;
+            }
+            &__reduce {
+                font-weight: 700;
+                color: $orange;
+            }
+            &__oldPrice {
+                font-weight: 400;
+                color: $grayishBlue;
+                text-decoration: line-through;
+            }
+        }
+        &__multi {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+
+            margin-bottom: 20px;
+            &__moins {}
+            &__number {
+                font-weight: 700;
+                color: $varkBlue;
+                font-size: 18px;
+            }
+            &__plus {}
+            &__btn {
+                color: $orange;
+                border: 0;
+                background-color: white;
+                font-family: $primaryFont;
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+        &__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            border: 0;
+            border-radius: 10px;
+            background-color: $orange;
+            padding: 20px;
+            color: $white;
+            font-family: $primaryFont;
+            font-weight: 700;
+            font-size: 16px;
+            &__image {
+                margin-right: 15px;
+                filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(64deg) brightness(109%) contrast(102%);
+            }
+        }
+    }
+}

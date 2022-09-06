@@ -1,0 +1,38 @@
+body {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        &__left{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 50%;
+            margin: 20px;
+            &__menu {}
+            &__menu:hover {
+                cursor: pointer;
+            }
+            &__title {
+                margin-left: 20px;
+                font-family: $primaryFont;
+                font-weight: 700;
+                color: $varkBlue;
+                text-transform: uppercase;
+            }
+        }
+        &__right{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 50%;
+            margin: 20px;
+            &__cart {}
+            &__avatar {
+                width: 30px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
